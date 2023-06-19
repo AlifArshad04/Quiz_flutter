@@ -1,0 +1,149 @@
+[
+  {
+    "questionText": "What is the capital of France?",
+    "options": [
+      {
+        "optionText": "Paris",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Madrid",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Rome",
+        "isCorrect": false
+      },
+      {
+        "optionText": "London",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "Who painted the Mona Lisa?",
+    "options": [
+      {
+        "optionText": "Leonardo da Vinci",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Pablo Picasso",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Vincent van Gogh",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Claude Monet",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "What is the largest planet in our solar system?",
+    "options": [
+      {
+        "optionText": "Jupiter",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Mars",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Saturn",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Earth",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "Which country is known as the 'Land of the Rising Sun'?",
+    "options": [
+      {
+        "optionText": "Japan",
+        "isCorrect": true
+      },
+      {
+        "optionText": "China",
+        "isCorrect": false
+      },
+      {
+        "optionText": "South Korea",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Vietnam",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "What is the chemical symbol for gold?",
+    "options": [
+      {
+        "optionText": "Au",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Ag",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Pt",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Fe",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "Who wrote the novel 'To Kill a Mockingbird'?",
+    "options": [
+      {
+        "optionText": "Harper Lee",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Ernest Hemingway",
+        "isCorrect": false
+      },
+      {
+        "optionText": "J.K. Rowling",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Mark Twain",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "Which planet is known as the 'Red Planet'?",
+    "options": [
+      {
+        "optionText": "Mars",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Mercury",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Venus",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Uranus",
+        "isCorrect": false
+      }
+    ]
+  }
+]
