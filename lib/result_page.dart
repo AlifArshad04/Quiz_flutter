@@ -9,20 +9,23 @@ class ResultPage extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Result Page'),
+        title: Text('Quiz Result'),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Quiz Result',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-            ),
             SizedBox(height: 20),
             Text(
               'Correct Answers: ${quizProvider.correctAnswers}',
-              style: TextStyle(fontSize: 16),
+              style: TextStyle(fontSize: 24),
+            ),
+            SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/quiz');
+              },
+              child: Text('Play Again'),
             ),
           ],
         ),

@@ -19,6 +19,8 @@ class _QuizPageState extends State<QuizPage> {
   bool _showAnswer = false;
   late Timer _timer;
   bool _timeUp = false;
+  final int totalSeconds = 30; // Total seconds for the countdown
+  double progressValue = 1.0; // Progress value for the progress bar
 
   @override
   void initState() {
@@ -49,6 +51,7 @@ class _QuizPageState extends State<QuizPage> {
       } else {
         setState(() {
           _remainingTime--;
+          progressValue = _remainingTime / totalSeconds;
         });
       }
     });
@@ -97,7 +100,7 @@ class _QuizPageState extends State<QuizPage> {
     }
     return Scaffold(
       appBar: AppBar(
-        title: Text('Quiz Page'),
+        title: Text('Quiz'),
       ),
       body: Padding(
         padding: EdgeInsets.all(16.0),
@@ -107,9 +110,16 @@ class _QuizPageState extends State<QuizPage> {
           children: [
             Text(
               'Remaining Time: $_remainingTime',
-              style: TextStyle(fontSize: 18),
+              style: TextStyle(fontSize: 22),
             ),
-            SizedBox(height: 20),
+            SizedBox(height: 10,),
+            LinearProgressIndicator(
+              value: progressValue,
+              minHeight: 10,
+              backgroundColor: Colors.orange[800],
+              valueColor: AlwaysStoppedAnimation<Color>(Colors.blue),
+            ),
+            SizedBox(height: 50),
             _questions.isNotEmpty
                 ? Column(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -121,9 +131,10 @@ class _QuizPageState extends State<QuizPage> {
                 SizedBox(height: 10),
                 Text(
                   _questions[_currentQuestionIndex].questionText,
-                  style: TextStyle(fontSize: 16),
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 24),
                 ),
-                SizedBox(height: 20),
+                // SizedBox(height: 20),
                 GridView.count(
                   crossAxisCount: 2,
                   childAspectRatio: 3,
@@ -151,7 +162,20 @@ class _QuizPageState extends State<QuizPage> {
                 if (_showAnswer)
                   Text(
                     _answeredCorrectly ? 'Correct Answer!' : 'Incorrect Answer!',
-                    style: TextStyle(fontSize: 18, color: _answeredCorrectly ? Colors.green : Colors.red),
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 18,
+                        color: _answeredCorrectly ? Colors.green : Colors.red
+                    ),
+                  ),
+                if (_showAnswer && !_answeredCorrectly)
+                  Text(
+                    'Correct answer is: ${_questions[_currentQuestionIndex].options.firstWhere((option) => option.isCorrect).optionText}',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                        fontSize: 18,
+                        // color: _answeredCorrectly ? Colors.green : Colors.red
+                    ),
                   ),
               ],
             )

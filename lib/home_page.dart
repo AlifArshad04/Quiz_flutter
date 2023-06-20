@@ -18,12 +18,12 @@ class HomePage extends StatelessWidget {
               },
               child: Text('Start Quiz'),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.pushNamed(context, '/leaderboard');
-              },
-              child: Text('Leader Board'),
-            ),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Navigator.pushNamed(context, '/leaderboard');
+            //   },
+            //   child: Text('Leader Board'),
+            // ),
           ],
         ),
       ),
