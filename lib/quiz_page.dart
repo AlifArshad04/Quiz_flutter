@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'main.dart';
+import 'shuffle_ques.dart';
 
 class QuizPage extends StatefulWidget {
   @override
@@ -26,11 +27,14 @@ class _QuizPageState extends State<QuizPage> {
     startTimer();
   }
 
+
   Future<void> loadQuizData() async {
     final String data = await DefaultAssetBundle.of(context as BuildContext).loadString('assets/quiz_data.json');
     final List<dynamic> jsonQuestions = json.decode(data);
     _questions = jsonQuestions.map((jsonQuestion) => Question.fromJson(jsonQuestion)).toList();
-    setState(() {});
+    setState(() {
+      _questions = QuizHelper.shuffleQuestions(_questions);
+    });
   }
 
   void startTimer() {

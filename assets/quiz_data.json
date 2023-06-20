@@ -145,5 +145,173 @@
         "isCorrect": false
       }
     ]
+  },
+  {
+    "questionText": "What is the capital city of Australia?",
+    "options": [
+      {
+        "optionText": "Canberra",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Sydney",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Melbourne",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Perth",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "Who is the founder of Microsoft?",
+    "options": [
+      {
+        "optionText": "Bill Gates",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Steve Jobs",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Jeff Bezos",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Mark Zuckerberg",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "Which is the longest river in the world?",
+    "options": [
+      {
+        "optionText": "Nile",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Amazon",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Yangtze",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Mississippi",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "Who painted the famous artwork 'The Starry Night'?",
+    "options": [
+      {
+        "optionText": "Vincent van Gogh",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Pablo Picasso",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Leonardo da Vinci",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Michelangelo",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "Which country is famous for the Taj Mahal?",
+    "options": [
+      {
+        "optionText": "India",
+        "isCorrect": true
+      },
+      {
+        "optionText": "China",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Egypt",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Italy",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "Who is the author of the play 'Romeo and Juliet'?",
+    "options": [
+      {
+        "optionText": "William Shakespeare",
+        "isCorrect": true
+      },
+      {
+        "optionText": "George Orwell",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Jane Austen",
+        "isCorrect": false
+      },
+      {
+        "optionText": "F. Scott Fitzgerald",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "What is the largest organ in the human body?",
+    "options": [
+      {
+        "optionText": "Skin",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Heart",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Liver",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Brain",
+        "isCorrect": false
+      }
+    ]
+  },
+  {
+    "questionText": "Which is the smallest continent in the world?",
+    "options": [
+      {
+        "optionText": "Australia",
+        "isCorrect": true
+      },
+      {
+        "optionText": "Europe",
+        "isCorrect": false
+      },
+      {
+        "optionText": "Africa",
+        "isCorrect": false
+      },
+      {
+        "optionText": "South America",
+        "isCorrect": false
+      }
+    ]
   }
 ]
