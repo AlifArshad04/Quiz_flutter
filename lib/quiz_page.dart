@@ -112,7 +112,7 @@ class _QuizPageState extends State<QuizPage> {
               'Remaining Time: $_remainingTime',
               style: TextStyle(fontSize: 22),
             ),
-            SizedBox(height: 10,),
+            SizedBox(height: 20,),
             LinearProgressIndicator(
               value: progressValue,
               minHeight: 10,
